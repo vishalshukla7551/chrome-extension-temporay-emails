@@ -21,7 +21,7 @@ app.get("/get-email", async (req, res) => {
             domainData = JSON.parse(domainText);
         } catch {
             console.error("Invalid JSON response:", domainText);
-            return res.status(500).json({ error: "Invalid response from domain API" });
+            return res.status(500).json({ error: "Invalid response from API" });
         }
 
         if (!domainData["hydra:member"] || domainData["hydra:member"].length === 0) {
