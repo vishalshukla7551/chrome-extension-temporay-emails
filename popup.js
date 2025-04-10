@@ -11,7 +11,7 @@ document.getElementById("generateEmail").addEventListener("click", async () => {
         }
     } catch (error) {
         console.error("Error:", error);
-        document.getElementById("email").innerText = "Server Error.";
+        document.getElementById("email").innerText = "Server Error.Please try again later";
     }
 });
 
